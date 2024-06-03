@@ -7,15 +7,15 @@
 </head>
 
 <body>
-    <h1 th:text="${message}">Thymeleaf課題</h1>
-    <h2>入力画面</h2>
+    <h1 th:text="#{content.title}"></h1>
+    <h2 th:text="#{content.message1}"></h2>
     <form method="post" action="/output">
-        <p>値を入力してください:</p>
+        <p th:text="#{content.message}"></p>
         <div th:if="${param.previous}">
             <p>前回入力された値は「<span th:text="${param.previous}"></span>」でした。</p>
         </div>
-        <input type="text" id="inputValue" name="inputValue" required>
-        <button type="submit">送信</button>
+        <input type="text" id="inputMessage" name="inputMessage" required>
+        <button type="submit" th:text="#{content.input.botton}"></button>
     </form>
 
 </body>
