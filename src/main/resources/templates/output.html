@@ -7,7 +7,7 @@
 <body>
     <h1 th:text="#{content.title}"></h1>
     <h2 th:text="#{content.message2}"></h2>
-    <p>入力された値は「<span th:text="${inputMessage}"></span>」です。</p>
+    <span th:text="#{content.output.score}"></span><span th:text="${inputMessage}"></span><span th:text="#{content.output.score2}"></span>
     <a th:href="@{/input(previous=${inputMessage})}" th:text="#{content.output.link}"></a>
 </body>
 </html>

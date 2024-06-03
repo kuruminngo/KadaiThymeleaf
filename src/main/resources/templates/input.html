@@ -12,7 +12,7 @@
     <form method="post" action="/output">
         <p th:text="#{content.message}"></p>
         <div th:if="${param.previous}">
-            <p>前回入力された値は「<span th:text="${param.previous}"></span>」でした。</p>
+            <span th:text="#{content.input.score}"></span><span th:text="${param.previous}"></span><span th:text="#{content.input.score2}"></span>
         </div>
         <input type="text" id="inputMessage" name="inputMessage" required>
         <button type="submit" th:text="#{content.input.botton}"></button>
