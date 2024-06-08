@@ -14,7 +14,7 @@
         <div th:if="${param.previous}">
             <span th:text="#{content.input.score}"></span><span th:text="${param.previous}"></span><span th:text="#{content.input.score2}"></span>
         </div>
-        <input type="text" id="inputMessage" name="inputMessage" required>
+        <input type="text" id="inputMessage" name="inputMessage" >
         <button type="submit" th:text="#{content.input.botton}"></button>
     </form>
 
